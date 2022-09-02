@@ -1,0 +1,360 @@
+:root{
+    --white: #fff;
+    --blue: #0777fb;
+    --black-light: #1e1e1e;
+    --gray: #4e4e4e;
+    --gray-light: #f5f5f5;
+}
+
+/* .section-titlle{
+
+} */
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--gray-light);
+}
+
+/* ########### Home ########### */
+header{
+    background-image: linear-gradient(to right, rgba(0,0,0,.5) , rgba(0,0,0,.5)) , url("../images/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    z-index: 999;
+    transition: all .6s;
+    padding: 18px 0;
+}
+
+.navbar-brand{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.nav-link{
+    font-size: 1rem;
+    color: var(--white);
+    font-weight: 600;
+    margin-left: 1rem;
+    position: relative;
+}
+
+.nav-link::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    top: 37px;
+    left: 8px;
+    width: 0;
+    background-color: var(--white);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-link.active::before{
+    visibility: visible;
+    width: 70%;
+}
+
+.nav-link:hover::before
+{
+    visibility: visible;
+    width: 70%;
+}
+
+.nav-link:hover{
+    color: var(--white);
+}
+
+
+.collapse.navbar-collapse.bg-light ul li a {
+  color: #1e1e1e;
+}
+
+
+
+
+header h1{
+    color: var(--white);
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+header p::after {
+    content: "";
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: 600;
+    animation: typing 8s infinite;
+}
+
+
+/* ########### About ########### */
+.about{
+    background-color: var(--white);
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+    margin-top: 4rem;
+}
+
+.about .about-Skill ul li{
+    padding-bottom: 20px;
+    color: var(--gray);
+}
+.about .about-Skill ul li span{
+    font-weight: 700;
+    color: var(--black-light);
+}
+.about .about-Skill .skill h5{
+    color: var(--black-light);
+    font-size: 1.1rem;
+    margin-bottom: 1.3rem;
+}
+.about .about-Skill .skill h6{
+    margin: .8rem 0;
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+.progress {
+    border-radius: 0;
+    background-color: #cee0f8;
+    height: .7rem;
+}
+.progress-bar{
+    background-color: var(--blue);
+}
+
+
+.about .about-text h4{
+    font-size: 32px;
+    position: relative;
+}
+
+.about .about-text h4::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: var(--blue);
+    bottom: -8px;
+    left: 0;
+}
+
+.about .about-text p{
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--gray);
+    font-weight: 300;
+}
+
+
+/* ########### SERVICES ########### */
+/* .services{
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############################################################# */
+/* Animation */
+@keyframes typing {
+    0%{
+        content: "|";
+    }
+    2% {
+      content: "|";
+    }
+    4% {
+      content: "D|";
+    }
+    6% {
+      content: "De'|";
+    }
+    8% {
+      content: "Des|";
+    }
+    10% {
+      content: "Desi|";
+    }
+    12% {
+      content: "Desig|";
+    }
+    14% {
+      content: "Design|";
+    }
+    16% {
+      content: "Designer|";
+    }
+    18% {
+      content: "Designer";
+    }
+    20% {
+      content: "Designer|";
+    }
+    22% {
+      content: "Designer";
+    }
+    24% {
+      content: "Designer|";
+    }
+    26% {
+      content: "Designe|";
+    }
+    28% {
+      content: "Design|";
+    }
+    30% {
+      content: "Desig|";
+    }
+    32% {
+      content: "Desi|";
+    }
+    34% {
+      content: "Des|";
+    }
+    36% {
+      content: "De|";
+    }
+    38% {
+      content: "D|";
+    }
+    40% {
+      content: "|";  
+    }
+    42% {
+      content: "P";
+    }
+    44% {
+      content: "Ph|";
+    }
+    46% {
+      content: "Pho|";
+    }
+    48% {
+      content: "Phot|";
+    }
+    50% {
+      content: "Photo|";
+    }
+    52% {
+      content: "Photog|";
+    }
+    54% {
+      content: "Photogr|";
+    }
+    56% {
+      content: "Photogra|";
+    }
+    58% {
+      content: "Photograp|";
+    }
+    60% {
+      content: "Photograph|";
+    }
+    62% {
+      content: "Photographe|";
+    }
+    64% {
+      content: "Photographer|";
+    }
+    66% {
+      content: "Photographer";
+    }
+    68% {
+      content: "Photographer|";
+    }
+    70% {
+      content: "Photographer";
+    }
+    72% {
+      content: "Photographer|";
+    }
+    74% {
+      content: "Photographe|";
+    }
+    76% {
+      content: "Photograph|";
+    }
+    78% {
+      content: "Photograp|";
+    }
+    80% {
+      content: "Photogra|";
+    }
+    82% {
+      content: "Photogr|";
+    }
+    84% {
+      content: "Photog|";
+    }
+    86% {
+      content: "Photo|";
+    }
+    88% {
+      content: "Phot|";
+    }
+    90% {
+      content: "Pho|";
+    }
+    92% {
+      content: "Ph|";
+    }
+    94% {
+      content: "P|";
+    }
+    96% {
+      content: "|";
+    }
+  }
+
+  /* ######################################## */
+  .up-arrow{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: var(--blue);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .7s;
+  }
+
